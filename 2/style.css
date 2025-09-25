@@ -1,0 +1,59 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f0f0f0; /* Fundo para melhor visualização */
+}
+
+.wrapper{
+    min-height: 100vh;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 15px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+
+main {
+    flex: 1; /* Apenas o 'main' deve crescer para preencher o espaço vago */
+   
+    display: flex;
+    gap: 15px;
+}
+
+
+section {
+    flex: 1; /* para as seções dentro de main terem o msm tamanho */
+}
+
+
+header, footer, section {
+   
+    min-height: 200px; 
+    /* Adicionado para garantir uma altura mínima e um preenchimento */
+    /* padding: 20px; */
+
+    background-color: white;
+    border: 3px solid black;
+    box-shadow: 6px 6px 3px rgba(0,0,0,0.2);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    transition: all 0.3s ease;
+}
+
+header:hover,
+footer:hover,
+section:hover {
+    cursor: pointer;
+    box-shadow: none;
+    background-color: rgb(226, 226, 226);
+}
